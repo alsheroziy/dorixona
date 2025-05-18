@@ -90,7 +90,7 @@
 
                     <!-- Amallar -->
                     <div class="mt-6 flex justify-end space-x-3">
-                        <a href="{{ route('admin.sales') }}" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">
+                        <a href="{{ route('admin.sales.index') }}" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">
                             Bekor qilish
                         </a>
                         <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">

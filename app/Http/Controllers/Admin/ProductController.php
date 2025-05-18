@@ -37,7 +37,7 @@ class ProductController extends Controller
 
         Product::create($validated);
 
-        return redirect()->route('admin.products')
+        return redirect()->route('admin.products.index')
             ->with('success', 'Mahsulot muvaffaqiyatli qo\'shildi.');
     }
 
@@ -62,7 +62,7 @@ class ProductController extends Controller
 
         $product->update($validated);
 
-        return redirect()->route('admin.products')
+        return redirect()->route('admin.products.index')
             ->with('success', 'Mahsulot muvaffaqiyatli yangilandi.');
     }
 
@@ -70,7 +70,7 @@ class ProductController extends Controller
     {
         $product->delete();
 
-        return redirect()->route('admin.products')
+        return redirect()->route('admin.products.index')
             ->with('success', 'Mahsulot muvaffaqiyatli o\'chirildi.');
     }
 }

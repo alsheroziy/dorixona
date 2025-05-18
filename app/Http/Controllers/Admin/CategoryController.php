@@ -29,7 +29,7 @@ class CategoryController extends Controller
 
         Category::create($validated);
 
-        return redirect()->route('admin.categories')
+        return redirect()->route('admin.categories.index')
             ->with('success', 'Kategoriya muvaffaqiyatli qo\'shildi.');
     }
 
@@ -48,7 +48,7 @@ class CategoryController extends Controller
 
         $category->update($validated);
 
-        return redirect()->route('admin.categories')
+        return redirect()->route('admin.categories.index')
             ->with('success', 'Kategoriya muvaffaqiyatli yangilandi.');
     }
 
@@ -56,7 +56,7 @@ class CategoryController extends Controller
     {
         $category->delete();
 
-        return redirect()->route('admin.categories')
+        return redirect()->route('admin.categories.index')
             ->with('success', 'Kategoriya muvaffaqiyatli o\'chirildi.');
     }
 }
